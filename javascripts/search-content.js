@@ -60,7 +60,12 @@ function search() {
         }
         else {
             var html = "";
-          
+			var blog="";
+			var discussion="";
+			var update="";
+			var document="";
+			var post="";
+			
             var rows = response.data;
             var url="";
             var subject="";
@@ -74,158 +79,119 @@ function search() {
             
             
             $.each(rows, function(index, row) {   
+					url=row.resources.html.ref;
+                    subject=row.subject;
+                    contentSummary=row.contentSummary;
+                    author=row.author.name;
+                    modifiedDate=row.modificationDate;
+                    likeCount=row.likeCount;
+                    type=row.type;
+                    avatar=row.author.avatarURL;
+                    username=row.author.username;
                if(row.type=="blog")
                {
-                     url=row.resources.html.ref;
-                     subject=row.subject;
-                      contentSummary=row.contentSummary;
-                      author=row.author.name;
-                      modifiedDate=row.modificationDate;
-                     likeCount=row.likeCount;
-                     type=row.type;
-                     avatar=row.author.avatarURL;
-                     username=row.author.username;
-                   html +="<ul>";
-                     html +="<li>"+type+"</li>";
-                     html +="<li><a href="+url+">"+subject+"</a></li>";
-                     html +="</ul>";
-                     html +="<ul>";
-                     html +="<li>&nbsp;</li>";
-                      html +="<li>"+subject+"</li>";
-                      html +="</ul>";
-                      html +="<ul>";
-                     html +="<li><img src='"+ avatar + "' width='25px' height='25px' border='0'/></li>";
-                      html +="<li><a href=https://apps-onprem.jivesoftware.com/people/"+username+">"+author+"</a></li>";
-                       html +="<li>"+likeCount+"</li>";
-                       html +="<li>"+modifiedDate+"</li>";
-                      html +="</ul>";
+                     
+					blog +='<ul>';
+                    blog +='<li class="discussion"/>';
+                    blog +='<li><a href="'+url+'">'+subject+'</a></li>';
+                    blog +='</ul>';
+                    blog +='<ul>';
+                    blog +='<li>&nbsp;</li>';
+                    blog +='<li>'+contentSummary+'</li>';
+                    blog +='</ul>';
+                    blog +='<ul>';
+                    blog +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
+                    blog +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    blog +='<li>'+likeCount+'</li>';
+                    blog +='<li>'+modifiedDate+'</li>';
+                    blog +='</ul>';
+                  
+               }
+			   if(row.type=="discussion")
+               {
+                     
+					discussion +='<ul>';
+                    discussion +='<li class="discussion"/>';
+                    discussion +='<li><a href="'+url+'">'+subject+'</a></li>';
+                    discussion +='</ul>';
+                    discussion +='<ul>';
+                    discussion +='<li>&nbsp;</li>';
+                    discussion +='<li>'+contentSummary+'</li>';
+                    discussion +='</ul>';
+                    discussion +='<ul>';
+                    discussion +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
+                    discussion +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    discussion +='<li>'+likeCount+'</li>';
+                    discussion +='<li>'+modifiedDate+'</li>';
+                    discussion +='</ul>';
+                  
+               }
+			  if(row.type=="document")
+               {
+                     
+					document +='<ul>';
+                    document +='<li class="discussion"/>';
+                    document +='<li><a href="'+url+'">'+subject+'</a></li>';
+                    document +='</ul>';
+                    document +='<ul>';
+                    document +='<li>&nbsp;</li>';
+                    document +='<li>'+contentSummary+'</li>';
+                    document +='</ul>';
+                    document +='<ul>';
+                    document +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
+                    document +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    document +='<li>'+likeCount+'</li>';
+                    document +='<li>'+modifiedDate+'</li>';
+                    document +='</ul>';
+                  
+               }
+			   if(row.type=="update")
+               {
+                     
+					update +='<ul>';
+                    update +='<li class="discussion"/>';
+                    update +='<li><a href="'+url+'">'+subject+'</a></li>';
+                    update +='</ul>';
+                    update +='<ul>';
+                    update +='<li>&nbsp;</li>';
+                    update +='<li>'+contentSummary+'</li>';
+                    update +='</ul>';
+                    update +='<ul>';
+                    update +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
+                    update +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    update +='<li>'+likeCount+'</li>';
+                    update +='<li>'+modifiedDate+'</li>';
+                    update +='</ul>';
+                  
+               }
+			   if(row.type=="post")
+               {
+                     
+					post +='<ul>';
+                    post +='<li class="discussion"/>';
+                    post +='<li><a href="'+url+'">'+subject+'</a></li>';
+                    post +='</ul>';
+                    post +='<ul>';
+                    post +='<li>&nbsp;</li>';
+                    post +='<li>'+contentSummary+'</li>';
+                    post +='</ul>';
+                    post +='<ul>';
+                    post +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
+                    post +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    post +='<li>'+likeCount+'</li>';
+                    post +='<li>'+modifiedDate+'</li>';
+                    post +='</ul>';
                   
                }
             });
             
-            html +="<hr>";
-            $.each(rows, function(index, row) {   
-               if(row.type=="discussion")
-               {
-                     url=row.resources.html.ref;
-                     subject=row.subject;
-                      contentSummary=row.contentSummary;
-                      author=row.author.name;
-                      modifiedDate=row.modificationDate;
-                      //var date = getISOStrict(modifiedDate);
-                     likeCount=row.likeCount;
-                     type=row.type;
-                     avatar=row.author.avatarURL;
-                     username=row.author.username;
-                    html +='<ul>';
-                     html +='<li class="discussion"/>';
-                     html +='<li><a href="'+url+'">'+subject+'</a></li>';
-                     html +='</ul>';
-                     html +='<ul>';
-                     html +='<li>&nbsp;</li>';
-                      html +='<li>'+contentSummary+'</li>';
-                      html +='</ul>';
-                      html +='<ul>';
-                     html +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
-                      html +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
-                       html +='<li>'+likeCount+'</li>';
-                       html +='<li>'+modifiedDate+'</li>';
-                      html +='</ul>';
-                  
-               }
-            });
             
-            html +="<hr>";
-            $.each(rows, function(index, row) {
-               if(row.type=="document")
-               {
-                  url=row.resources.html.ref;
-                     subject=row.subject;
-                      contentSummary=row.contentSummary;
-                      author=row.author.name;
-                      modifiedDate=row.modificationDate;
-                     likeCount=row.likeCount;
-                     type=row.type;
-                    avatar=row.author.avatarURL;
-                     username=row.author.username;
-                     type=row.type;
-                     html +="<ul>";
-                     html +="<li>"+type+"</li>";
-                     html +="<li><a href="+url+">"+subject+"</a></li>";
-                     html +="</ul>";
-                     html +="<ul>";
-                     html +="<li>&nbsp;</li>";
-                      html +="<li>"+subject+"</li>";
-                      html +="</ul>";
-                      html +="<ul>";
-                     html +="<li><img src="+ avatar + "width='25px' height='25px' border='0'/></li>";
-                      html +="<li><a href=https://apps-onprem.jivesoftware.com/people/"+username+">"+author+"</a></li>";
-                       html +="<li>"+likeCount+"</li>";
-                       html +="<li>"+modifiedDate+"</li>";
-                      html +="</ul>";
-               }
-            });
-            html +="<hr>";
-            $.each(rows, function(index, row) {
-               if(row.type=="update")
-               {
-                  url=row.resources.html.ref;
-                     subject=row.subject;
-                      contentSummary=row.contentSummary;
-                      author=row.author.name;
-                      modifiedDate=row.modificationDate;
-                     likeCount=row.likeCount;
-                     type=row.type;
-                    avatar=row.author.avatarURL;
-                     username=row.author.username;
-                     type=row.type;
-                     html +="<ul>";
-                     html +="<li>"+type+"</li>";
-                     html +="<li><a href="+url+">"+subject+"</a></li>";
-                     html +="</ul>";
-                     html +="<ul>";
-                     html +="<li>&nbsp;</li>";
-                      html +="<li>"+subject+"</li>";
-                      html +="</ul>";
-                      html +="<ul>";
-                     html +="<li><img src="+ avatar + "width='25px' height='25px' border='0'/></li>";
-                      html +="<li><a href=https://apps-onprem.jivesoftware.com/people/"+username+">"+author+"</a></li>";
-                       html +="<li>"+likeCount+"</li>";
-                       html +="<li>"+modifiedDate+"</li>";
-                      html +="</ul>";
-               }
-            });
-            html +="<hr>";
-            $.each(rows, function(index, row) {
-               if(row.type=="post")
-               {
-                  url=row.resources.html.ref;
-                     subject=row.subject;
-                      contentSummary=row.contentSummary;
-                      author=row.author.name;
-                      modifiedDate=row.modificationDate;
-                     likeCount=row.likeCount;
-                     type=row.type;
-                   avatar=row.author.avatarURL;
-                     username=row.author.username;
-                     type=row.type;
-                     html +="<ul>";
-                     html +="<li>"+type+"</li>";
-                     html +="<li><a href="+url+">"+subject+"</a></li>";
-                     html +="</ul>";
-                     html +="<ul>";
-                     html +="<li>&nbsp;</li>";
-                      html +="<li>"+subject+"</li>";
-                      html +="</ul>";
-                      html +="<ul>";
-                     html +="<li><img src="+ avatar + "width='25px' height='25px' border='0'/></li>";
-                      html +="<li><a href=https://apps-onprem.jivesoftware.com/people/"+username+">"+author+"</a></li>";
-                       html +="<li>"+likeCount+"</li>";
-                       html +="<li>"+modifiedDate+"</li>";
-                      html +="</ul>";
-               }
-            });
-            html +="<hr>";
+            html +=discussion;
+			html +="<br>"+document;
+			html +="<br>"+update;
+			html +="<br>"+post;
+			html +="<br>"+blog;
+			
              console.log(html);
             $("#search-results").html(html);
             $("#search-info").show();
