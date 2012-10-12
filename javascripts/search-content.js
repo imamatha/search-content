@@ -92,7 +92,7 @@ function search() {
                {
                      
 					blog +='<ul>';
-                    blog +='<li class="discussion"/>';
+                    blog +='<li class="blog"/>';
                     blog +='<li><a href="'+url+'">'+subject+'</a></li>';
                     blog +='</ul>';
                     blog +='<ul>';
@@ -130,7 +130,7 @@ function search() {
                {
                      
 					document +='<ul>';
-                    document +='<li class="discussion"/>';
+                    document +='<li class="document"/>';
                     document +='<li><a href="'+url+'">'+subject+'</a></li>';
                     document +='</ul>';
                     document +='<ul>';
@@ -149,7 +149,7 @@ function search() {
                {
                      
 					update +='<ul>';
-                    update +='<li class="discussion"/>';
+                    update +='<li class="update"/>';
                     update +='<li><a href="'+url+'">'+subject+'</a></li>';
                     update +='</ul>';
                     update +='<ul>';
@@ -168,7 +168,7 @@ function search() {
                {
                      
 					post +='<ul>';
-                    post +='<li class="discussion"/>';
+                    post +='<li class="post"/>';
                     post +='<li><a href="'+url+'">'+subject+'</a></li>';
                     post +='</ul>';
                     post +='<ul>';
