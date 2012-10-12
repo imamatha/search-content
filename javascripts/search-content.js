@@ -88,25 +88,7 @@ function search() {
                     type=row.type;
                     avatar=row.author.avatarURL;
                     username=row.author.username;
-               if(row.type=="blog")
-               {
-                     
-					blog +='<ul>';
-                    blog +='<li class="blog"/>';
-                    blog +='<li><a href="'+url+'">'+subject+'</a></li>';
-                    blog +='</ul>';
-                    blog +='<ul>';
-                    blog +='<li>&nbsp;</li>';
-                    blog +='<li>'+contentSummary+'</li>';
-                    blog +='</ul>';
-                    blog +='<ul>';
-                    blog +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
-                    blog +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
-                    blog +='<li>'+likeCount+'</li>';
-                    blog +='<li>'+modifiedDate+'</li>';
-                    blog +='</ul>';
-                  
-               }
+               
 			   if(row.type=="discussion")
                {
                      
