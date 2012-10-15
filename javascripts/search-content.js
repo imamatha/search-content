@@ -119,7 +119,7 @@ function search() {
                    discussion +='<li>'+createdDate+'</li>';
                    discussion +='<li>Last Modified:<li>';
                    discussion +='<li>'+modifiedDate+'</li>';
-                     discussion +='<li>Likes:<li>';
+                   discussion +='Likes:';
                    discussion +='<li>'+likeCount+'</li>';
                   // discussion +='<li>'+modifiedDate+'</li>';
                    discussion +='</ul>';
