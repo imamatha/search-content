@@ -105,7 +105,7 @@ function search() {
                     discussion +='<ul>';
                     // discussion +='<li>&nbsp;</li>';
                     //discussion +='<li>created by <li>';
-                    discussion +='<li>created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/> <a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    discussion +='<li>created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     //discussion +='<a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     discussion +='</ul>';
                    
