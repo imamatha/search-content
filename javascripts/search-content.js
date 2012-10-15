@@ -158,7 +158,7 @@ function search() {
 			   if(row.type=="update")
                {
                      update +='<ul>';
-                     update +='<li class=" update" ><a href="'+url+'">'+subject+'</a></li>';
+                     update +='<li class="update" ><a href="'+url+'">'+subject+'</a></li>';
                      update +='</ul>';
                     
                      update +='<h5>';
@@ -189,7 +189,7 @@ function search() {
                {
                      
 				post +='<ul>';
-                     post +='<li class=" update" ><a href="'+url+'">'+subject+'</a></li>';
+                     post +='<li class="post" ><a href="'+url+'">'+subject+'</a></li>';
                      post +='</ul>';
                     
                      post +='<h5>';
