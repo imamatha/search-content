@@ -103,7 +103,7 @@ function search() {
                     discussion +='<h5>';
                     discussion +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
-                    discussion +='<li>created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    discussion +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     discussion +='</ul>';
                    
                     discussion +='<ul>';
@@ -113,7 +113,7 @@ function search() {
                     discussion +='</ul>';
                    
                     discussion +='<ul>';                                       
-                    discussion +='<li>created:'+creationDate+'</li>';
+                    discussion +='<li>Created:'+creationDate+'</li>';
                     discussion +='<li>Last Modified:'+modifiedDate+'</li>';                
                     discussion +='<li>Replies:'+replyCount+'</li>';                  
                     discussion +='<li>Likes:'+likeCount+'</li>';              
@@ -134,7 +134,7 @@ function search() {
                     document +='<h5>';
                     document +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
-                    document +='<li>created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    document +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     document +='</ul>';
                    
                     document +='<ul>';
@@ -144,7 +144,7 @@ function search() {
                     document +='</ul>';
                    
                     document +='<ul>';                                       
-                    document +='<li>created:'+creationDate+'</li>';
+                    document +='<li>Created:'+creationDate+'</li>';
                     document +='<li>Last Modified:'+modifiedDate+'</li>';                
                     document +='<li>Replies:'+replyCount+'</li>';                  
                     document +='<li>Likes:'+likeCount+'</li>';              
@@ -164,7 +164,7 @@ function search() {
                      update +='<h5>';
                      update +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
-                     update +='<li>created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                     update +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                      update +='</ul>';
                    
                      update +='<ul>';
@@ -174,7 +174,7 @@ function search() {
                      update +='</ul>';
                    
                      update +='<ul>';                                       
-                     update +='<li>created:'+creationDate+'</li>';
+                     update +='<li>Created:'+creationDate+'</li>';
                      update +='<li>Last Modified:'+modifiedDate+'</li>';                
                      update +='<li>Replies:'+replyCount+'</li>';                  
                      update +='<li>Likes:'+likeCount+'</li>';              
@@ -195,7 +195,7 @@ function search() {
                      post +='<h5>';
                      post +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
-                     post +='<li>created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                     post +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                      post +='</ul>';
                    
                      post +='<ul>';
@@ -205,7 +205,7 @@ function search() {
                      post +='</ul>';
                    
                      post +='<ul>';                                       
-                     post +='<li>created:'+creationDate+'</li>';
+                     post +='<li>Created:'+creationDate+'</li>';
                      post +='<li>Last Modified:'+modifiedDate+'</li>';                
                      post +='<li>Replies:'+replyCount+'</li>';                  
                      post +='<li>Likes:'+likeCount+'</li>';              
