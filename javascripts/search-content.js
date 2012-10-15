@@ -6,14 +6,6 @@ function init() {
    
 }
 
-string.trim():
-
-if (!String.prototype.trim) {
- String.prototype.trim = function() {
-  return this.replace(/^\s+|\s+$/g,'');
- }
-}
-
  /* function getISOStrict(date) {
    
    if (Date.prototype.toISOString) {
@@ -153,7 +145,7 @@ function search() {
                     document +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
                     //document +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
-                    document +='<li>Created by<a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    document +='<li>Created by<a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     document +='</ul>';
                     document +='</font>';
                    
