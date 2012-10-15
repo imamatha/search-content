@@ -128,7 +128,7 @@ function search() {
                {
                      
 		     document +='<ul>';
-                    document +='<li class="discussion" ><a href="'+url+'">'+subject+'</a></li>';
+                    document +='<li class="document" ><a href="'+url+'">'+subject+'</a></li>';
                     document +='</ul>';
                     
                     document +='<h5>';
