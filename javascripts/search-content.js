@@ -223,7 +223,7 @@ function search() {
 			html +="<br>"+document;
 			html +="<br>"+update;
 			html +="<br>"+post;
-			html +="<br>"+blog;
+			//html +="<br>"+blog;
 			
             console.log(html);
             $("#search-results").html(html);
