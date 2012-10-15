@@ -85,7 +85,7 @@ function search() {
                     contentSummary=row.contentSummary;
                     author=row.author.name;
                     modifiedDate=row.modificationDate;
-                    createddate=row.creationDate;
+                    createdDate=row.creationDate;
                     likeCount=row.likeCount;
                     type=row.type;
                     avatar=row.author.avatarURL;
