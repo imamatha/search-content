@@ -100,14 +100,14 @@ function search() {
                     discussion +='<li class="discussion" ><a href="'+url+'">'+subject+'</a></li>';
                     discussion +='</ul>';
                     
-                    //discussion +='<h5>';
-                    discussion +='<p1>';
+                    discussion +='<h5>';
+                   // discussion +='<p1>';
                     discussion +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
                   //  discussion +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
                     discussion +='<li>Created by<a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     discussion +='</ul>';
-                    discussion +='</p1>';
+                    discussion +='</h5>';
                    
                     discussion +='<ul>';
                    // discussion +='<b>';
@@ -115,14 +115,14 @@ function search() {
                     //discussion +='</b>';
                     discussion +='</ul>';
                     
-                    discussion +='<p1>';
+                    discussion +='<h5>';
                     discussion +='<ul>';                                       
                     discussion +='<li>Created:'+creationDate+'</li>';
                     discussion +='<li>Last Modified:'+modifiedDate+'</li>';                
                     discussion +='<li>Replies:'+replyCount+'</li>';                  
                     discussion +='<li>Likes:'+likeCount+'</li>';              
                     discussion +='</ul>';
-                    discussion +='</p1>';
+                    discussion +='</h5>';
                     
                   //  discussion +='</h5>';
                     discussion +='<hr>';   
