@@ -138,7 +138,7 @@ function search() {
                {
                      
 		    document +='<ul>';
-                    document +='<li class="document" ><a href="'+url+'">'+subject+'</a></li>';
+                    document +='<li class="document" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
                     document +='</ul>';
                     
                     document +='<font size="2" color="grey">';
@@ -168,7 +168,7 @@ function search() {
 			   if(row.type=="update")
                {
                      update +='<ul>';
-                     update +='<li class="update" ><a href="'+url+'">'+contentSummary+'</a></li>';
+                     update +='<li class="update" ><a href="'+url+'" target="_apps">'+contentSummary+'</a></li>';
                      update +='</ul>';
                     
                      update +='<font size="2" color="grey">';
@@ -200,7 +200,7 @@ function search() {
                {
                      
 				post +='<ul>';
-                     post +='<li class="post" ><a href="'+url+'">'+subject+'</a></li>';
+                     post +='<li class="post" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
                      post +='</ul>';
                     
                      post +='<font size="2" color="grey">';
