@@ -5,6 +5,15 @@ function init() {
     gadgets.window.adjustHeight();
    
 }
+
+string.trim():
+
+if (!String.prototype.trim) {
+ String.prototype.trim = function() {
+  return this.replace(/^\s+|\s+$/g,'');
+ }
+}
+
  /* function getISOStrict(date) {
    
    if (Date.prototype.toISOString) {
