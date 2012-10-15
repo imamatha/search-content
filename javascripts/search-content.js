@@ -135,7 +135,7 @@ function search() {
                     document +='<h5>';
                     document +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
-                    document +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
+                    //document +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
                     document +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     document +='</ul>';
                    
