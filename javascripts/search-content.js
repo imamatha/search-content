@@ -122,13 +122,13 @@ function search() {
                     discussion +='<li>'+createdDate+'</li>';
                     discussion +='<li>Last Modified:<li>';
                     discussion +='<li>'+modifiedDate+'</li>';
+                    discussion +='Replies:';
+                    discussion +='<li>'+replyCount+'</li>';
                     discussion +='Likes:';
                     discussion +='<li>'+likeCount+'</li>';
                    //discussion +='<li>'+modifiedDate+'</li>';
-                   discussion +='Replies:';
-                   discussion +='<li>'+replyCount+'</li>';
-                   discussion +='</ul>';
-                   discussion +='</h5>';
+                    discussion +='</ul>';
+                    discussion +='</h5>';
                   
                }
 			  if(row.type=="document")
