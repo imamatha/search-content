@@ -96,7 +96,7 @@ function search() {
 			   if(row.type=="discussion")
                {
                      
-					discussion +='<ul>';
+		    discussion +='<ul>';
                     discussion +='<li class="discussion"/>';
                    // discussion +='<li><a href=https://github.com/imamatha/search-content/blob/master/search-content.html></li>';
                     discussion +='<li><a href="'+url+'">'+subject+'</a></li>';
@@ -104,8 +104,8 @@ function search() {
                     discussion +='<h5>';
                     discussion +='<ul>';
                     // discussion +='<li>&nbsp;</li>';
-                    discussion +='<li>created by</li>';
-                    discussion +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
+                    //discussion +='<li>created by <li>';
+                    discussion +='<li>created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
                     discussion +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     discussion +='</ul>';
                    
