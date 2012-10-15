@@ -75,7 +75,7 @@ function search() {
                {
                    
 					discussion +='<p>';
-                    discussion +='<span class="discussion" ><a href="'+url+'">'+subject+'</a></span>';
+                    discussion +='<span class="discussion" /><a href="'+url+'">'+subject+'</a>';
                     discussion +='</p>';                    
                 
                     
