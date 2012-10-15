@@ -97,8 +97,8 @@ function search() {
                     discussion +='<li><a href="'+url+'">'+subject+'</a></li>';
                     discussion +='</ul>';
                     discussion +='<ul>';
-                    discussion +='<li>&nbsp;</li>';
-                    discussion +='<h6>created by</h6>';
+                   // discussion +='<li>&nbsp;</li>';
+                    discussion +='<li>created by</li>';
                     discussion +='<li>'+author+'</li>';
                     discussion +='</ul>';
                     discussion +='<ul>';
