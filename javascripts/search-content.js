@@ -160,7 +160,7 @@ function search() {
 			   if(row.type=="update")
                {
                      update +='<ul>';
-                     update +='<li class="update" ><a href="'+url+'">'+subject+'</a></li>';
+                     update +='<li class="update" >'+contentsummary'</li>';
                      update +='</ul>';
                     
                      update +='<h5>';
