@@ -103,7 +103,8 @@ function search() {
                     discussion +='<h5>';
                     discussion +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
-                    discussion +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                  //  discussion +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
+                    discussion +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     discussion +='</ul>';
                    
                     discussion +='<ul>';
@@ -134,7 +135,8 @@ function search() {
                     document +='<h5>';
                     document +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
-                    document +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    document +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
+                    document +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     document +='</ul>';
                    
                     document +='<ul>';
@@ -164,7 +166,8 @@ function search() {
                      update +='<h5>';
                      update +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
-                     update +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                     //update +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                     update +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                      update +='</ul>';
                    
                      update +='<ul>';
@@ -195,7 +198,8 @@ function search() {
                      post +='<h5>';
                      post +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
-                     post +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    // post +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                     post +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                      post +='</ul>';
                    
                      post +='<ul>';
