@@ -95,38 +95,40 @@ function search() {
                
 			   if(row.type=="discussion")
                {
-                    discussion +='<p>';
+                   
 		    discussion +='<ul>';
                     discussion +='<li class="discussion" ><a href="'+url+'">'+subject+'</a></li>';
-                    discussion +='</ul>';
+                    discussion +='</ul>';                    
+                
                     
-                    discussion +='<h5>';
-                   // discussion +='<p1>';
+                    discussion +='<b>';
                     discussion +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
                   //  discussion +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
                     discussion +='<li>Created by<a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     discussion +='</ul>';
-                    discussion +='</h5>';
-                   
+                    discussion +='</b>';
+                    
+                    discussion +='<p>';
                     discussion +='<ul>';
                    // discussion +='<b>';
                     discussion +='<li>'+contentSummary+'</li>';
                     //discussion +='</b>';
                     discussion +='</ul>';
+                     discussion +='</p>';
                     
-                    discussion +='<h5>';
+                    discussion +='<b>';
                     discussion +='<ul>';                                       
                     discussion +='<li>Created:'+creationDate+'</li>';
                     discussion +='<li>Last Modified:'+modifiedDate+'</li>';                
                     discussion +='<li>Replies:'+replyCount+'</li>';                  
                     discussion +='<li>Likes:'+likeCount+'</li>';              
                     discussion +='</ul>';
-                    discussion +='</h5>';
+                    discussion +='</b>';
                     
                   //  discussion +='</h5>';
                     discussion +='<hr>';   
-                    discussion +='</p>';
+                    //discussion +='</p>';
                   
                }
                
