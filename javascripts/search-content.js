@@ -98,8 +98,8 @@ function search() {
                     discussion +='</ul>';
                     discussion +='<ul>';
                     discussion +='<li>&nbsp;</li>';
-                    discussion +='<h1>created by</h1>';
-                    discussion +='<li>'+author+'</li>';
+                    discussion +='<h6>created by</h6>';
+                    discussion +='<li>'created by +author+'</li>';
                     discussion +='<li>'+contentSummary+'</li>';
                     discussion +='</ul>';
                     discussion +='<ul>';
