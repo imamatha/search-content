@@ -101,13 +101,13 @@ function search() {
                     discussion +='</ul>';                    
                 
                     
-                    discussion +='<font size="3" color="red">';
+                    discussion +='<font size="1" color="grey">';
                     discussion +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
                   //  discussion +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
                     discussion +='<li>Created by<a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     discussion +='</ul>';
-                    discussion +='</font';
+                    discussion +='</font>';
                     
                     discussion +='<p>';
                     discussion +='<ul>';
