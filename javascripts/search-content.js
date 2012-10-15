@@ -73,6 +73,7 @@ function search() {
             var author="";
             var avatar="";
             var modifiedDate="";
+            var createdDate="";
             var likeCount="";
             var type="";
             var username="";
@@ -84,6 +85,7 @@ function search() {
                     contentSummary=row.contentSummary;
                     author=row.author.name;
                     modifiedDate=row.modificationDate;
+                    createddate=row.creationDate;
                     likeCount=row.likeCount;
                     type=row.type;
                     avatar=row.author.avatarURL;
@@ -114,6 +116,7 @@ function search() {
                     discussion +='<li>created:</li>';
                    // discussion +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
                     //discussion +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    discussion +='<li>'+createdDate+'</li>';
                    discussion +='<li>'+modifiedDate+'</li>';
                    discussion +='<li>'+likeCount+'</li>';
                   // discussion +='<li>'+modifiedDate+'</li>';
