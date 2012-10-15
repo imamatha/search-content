@@ -103,13 +103,13 @@ function search() {
                     discussion +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
                     discussion +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     discussion +='</ul>';
-                    discussion +='</h5>';
+                   
                     discussion +='<ul>';
                     discussion +='<b>';
                     discussion +='<li>'+contentSummary+'</li>';
                     discussion +='</b>';
                     discussion +='</ul>';
-                    discussion +='<h5>';
+                   
                     discussion +='<ul>';
                     discussion +='<li>created:</li>';
                    // discussion +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
