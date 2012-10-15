@@ -127,8 +127,8 @@ function search() {
 			  if(row.type=="document")
                {
                      
-					document +='<ul>';
-                    document +='<li class="document"/>';
+		     document +='<ul>';
+                    document +='<li class="discussion" ><a href="'+url+'">'+subject+'</a></li>';
                     document +='</ul>';
                     
                     document +='<h5>';
