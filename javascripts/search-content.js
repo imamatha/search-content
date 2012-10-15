@@ -98,15 +98,12 @@ function search() {
                      
 		    discussion +='<ul>';
                     discussion +='<li class="discussion" ><a href="'+url+'">'+subject+'</a></li>';
-                   // discussion +='<li><a href=https://github.com/imamatha/search-content/blob/master/search-content.html></li>';
-                    //discussion +='<li><a href="'+url+'">'+subject+'</a></li>';
                     discussion +='</ul>';
+                    
                     discussion +='<h5>';
                     discussion +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
-                    //discussion +='<li>created by <li>';
                     discussion +='<li>created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
-                   // discussion +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     discussion +='</ul>';
                    
                     discussion +='<ul>';
@@ -115,15 +112,13 @@ function search() {
                     discussion +='</b>';
                     discussion +='</ul>';
                    
-                    discussion +='<ul>';
-                   // discussion +='<li>created:</li>';
-                    // discussion +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
-                    // discussion +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    discussion +='<ul>';                                       
                     discussion +='<li>created:'+creationDate+'</li>';
                     discussion +='<li>Last Modified:'+modifiedDate+'</li>';                
                     discussion +='<li>Replies:'+replyCount+'</li>';                  
                     discussion +='<li>Likes:'+likeCount+'</li>';              
                     discussion +='</ul>';
+                    
                     discussion +='</h5>';
                     discussion +='<hr>';                   
                   
@@ -134,18 +129,30 @@ function search() {
                      
 					document +='<ul>';
                     document +='<li class="document"/>';
-                    document +='<li><a href="'+url+'">'+subject+'</a></li>';
                     document +='</ul>';
+                    
+                    document +='<h5>';
                     document +='<ul>';
-                    document +='<li>&nbsp;</li>';
+                    //discussion +='<li>&nbsp;</li>';
+                    document +='<li>created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    document +='</ul>';
+                   
+                    document +='<ul>';
+                    document +='<b>';
                     document +='<li>'+contentSummary+'</li>';
+                    document +='</b>';
                     document +='</ul>';
-                    document +='<ul>';
-                    document +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
-                    document +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
-                    document +='<li>'+likeCount+'</li>';
-                    document +='<li>'+modifiedDate+'</li>';
+                   
+                    document +='<ul>';                                       
+                    document +='<li>created:'+creationDate+'</li>';
+                    document +='<li>Last Modified:'+modifiedDate+'</li>';                
+                    document +='<li>Replies:'+replyCount+'</li>';                  
+                    document +='<li>Likes:'+likeCount+'</li>';              
                     document +='</ul>';
+                    
+                   document +='</h5>';
+                   document +='<hr>';                   
+                  
                   
                }
 			   if(row.type=="update")
