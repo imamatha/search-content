@@ -157,52 +157,75 @@ function search() {
                }
 			   if(row.type=="update")
                {
-                     
-					update +='<ul>';
-                    update +='<li class="update"/>';
-                    update +='<li><a href="'+url+'">'+subject+'</a></li>';
-                    update +='</ul>';
-                    update +='<ul>';
-                    update +='<li>&nbsp;</li>';
-                    update +='<li>'+contentSummary+'</li>';
-                    update +='</ul>';
-                    update +='<ul>';
-                    update +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
-                    update +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
-                    update +='<li>'+likeCount+'</li>';
-                    update +='<li>'+modifiedDate+'</li>';
-                    update +='</ul>';
+                     update +='<ul>';
+                     update +='<li class=" update" ><a href="'+url+'">'+subject+'</a></li>';
+                     update +='</ul>';
+                    
+                     update +='<h5>';
+                     update +='<ul>';
+                    //discussion +='<li>&nbsp;</li>';
+                     update +='<li>created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                     update +='</ul>';
+                   
+                     update +='<ul>';
+                     update +='<b>';
+                     update +='<li>'+contentSummary+'</li>';
+                     update +='</b>';
+                     update +='</ul>';
+                   
+                     update +='<ul>';                                       
+                     update +='<li>created:'+creationDate+'</li>';
+                     update +='<li>Last Modified:'+modifiedDate+'</li>';                
+                     update +='<li>Replies:'+replyCount+'</li>';                  
+                     update +='<li>Likes:'+likeCount+'</li>';              
+                     update +='</ul>';
+                    
+                     update +='</h5>';
+                     update +='<hr>';                   
+                  
                   
                }
 			   if(row.type=="post")
                {
                      
-					post +='<ul>';
-                    post +='<li class="post"/>';
-                    post +='<li><a href="'+url+'">'+subject+'</a></li>';
-                    post +='</ul>';
-                    post +='<ul>';
-                    post +='<li>&nbsp;</li>';
-                    post +='<li>'+contentSummary+'</li>';
-                    post +='</ul>';
-                    post +='<ul>';
-                    post +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
-                    post +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
-                    post +='<li>'+likeCount+'</li>';
-                    post +='<li>'+modifiedDate+'</li>';
-                    post +='</ul>';
+				post +='<ul>';
+                     post +='<li class=" update" ><a href="'+url+'">'+subject+'</a></li>';
+                     post +='</ul>';
+                    
+                     post +='<h5>';
+                     post +='<ul>';
+                    //discussion +='<li>&nbsp;</li>';
+                     post +='<li>created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                     post +='</ul>';
+                   
+                     post +='<ul>';
+                     post +='<b>';
+                     post +='<li>'+contentSummary+'</li>';
+                     post +='</b>';
+                     post +='</ul>';
+                   
+                     post +='<ul>';                                       
+                     post +='<li>created:'+creationDate+'</li>';
+                     post +='<li>Last Modified:'+modifiedDate+'</li>';                
+                     post +='<li>Replies:'+replyCount+'</li>';                  
+                     post +='<li>Likes:'+likeCount+'</li>';              
+                     post +='</ul>';
+                    
+                     post +='</h5>';
+                     post +='<hr>';                   
+                  
                   
                }
             });
             
             
-            html +=discussion;
+                        html +=discussion;
 			html +="<br>"+document;
 			html +="<br>"+update;
 			html +="<br>"+post;
 			html +="<br>"+blog;
 			
-             console.log(html);
+            console.log(html);
             $("#search-results").html(html);
             $("#search-info").show();
             gadgets.window.adjustHeight();
