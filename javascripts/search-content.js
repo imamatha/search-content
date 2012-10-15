@@ -101,7 +101,7 @@ function search() {
                     discussion +='</ul>';                    
                 
                     
-                    discussion +='<font size="3" color="grey">';
+                    discussion +='<font size="2" color="grey">';
                     discussion +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
                   //  discussion +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
@@ -117,7 +117,7 @@ function search() {
                     discussion +='</ul>';
                
                     
-                    discussion +='<font size="3" color="grey">';
+                    discussion +='<font size="2" color="grey">';
                     discussion +='<ul>';                                       
                     discussion +='<li>Created:'+creationDate+'</li>';
                     discussion +='<li>Last Modified:'+modifiedDate+'</li>';                
