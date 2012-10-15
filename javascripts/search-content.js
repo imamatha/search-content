@@ -147,10 +147,8 @@ function search() {
                     document +='</ul>';
                     document +='</font>';
                    
-                    document +='<ul>';
-                    document +='<b>';
-                    document +='<li>'+contentSummary+'</li>';
-                    document +='</b>';
+                    document +='<ul>';                    
+                    document +='<li>'+contentSummary+'</li>';                   
                     document +='</ul>';
                    
                     document +='<font size="3" color="grey">';
@@ -179,10 +177,8 @@ function search() {
                      update +='</ul>';
                      update +='</font>';
                    
-                     update +='<ul>';
-                     update +='<b>';
+                     update +='<ul>';                   
                      update +='<li>'+contentSummary+'</li>';
-                     update +='</b>';
                      update +='</ul>';
                    
                      update +='<font size="3" color="grey">';
@@ -213,10 +209,8 @@ function search() {
                      post +='</ul>';
                      post +='</font>';
                      
-                     post +='<ul>';
-                     post +='<b>';
-                     post +='<li>'+contentSummary+'</li>';
-                     post +='</b>';
+                     post +='<ul>';                   
+                     post +='<li>'+contentSummary+'</li>';                   
                      post +='</ul>';
                    
                      post +='<font size="3" color="grey">';
