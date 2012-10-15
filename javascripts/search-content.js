@@ -6,29 +6,6 @@ function init() {
    
 }
 
- /* function getISOStrict(date) {
-   
-   if (Date.prototype.toISOString) {
-        return date.toISOString().replace(/Z$/, "+0000");
-    }
-
-    function pad(number) {
-        var r = String(number);
-        if ( r.length === 1 ) {
-            r = '0' + r;
-        }
-        return r;
-    }
-
-    return date.getUTCDate();
-       + '-' + pad( date.getUTCMonth() + 1 )
-        + '-' + pad( date.getUTCFullYear() );
-        + 'T' + pad( date.getUTCHours() )
-       + ':' + pad( date.getUTCMinutes() )
-       + ':' + pad( date.getUTCSeconds() )
-       + '.' + String( (date.getUTCMilliseconds()/1000).toFixed(3) ).slice( 2, 5 )
-       + '+0000'; 
-} */
 
 // Perform a search and display the results
 function search() {
@@ -97,26 +74,26 @@ function search() {
 			   if(row.type=="discussion")
                {
                    
-		    discussion +='<ul>';
-                    discussion +='<li class="discussion" ><a href="'+url+'">'+subject+'</a></li>';
-                    discussion +='</ul>';                    
+					discussion +='<p>';
+                    discussion +='<span class="discussion" ><a href="'+url+'">'+subject+'</a></span>';
+                    discussion +='</p>';                    
                 
                     
                     discussion +='<font size="2" color="grey">';
-                    discussion +='<ul>';
+                    discussion +='<p>';
                     //discussion +='<li>&nbsp;</li>';
                   //  discussion +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
-                    discussion +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    discussion +='<span>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></span>';
                     console.log("Author: "+author);
-                    discussion +='</ul>';
+                    discussion +='</p>';
                     discussion +='</font>';
                     
                    
-                    discussion +='<ul>';
+                    discussion +='<p>';
                    // discussion +='<b>';
-                    discussion +='<li>'+contentSummary+'</li>';
+                    discussion +='<span>'+contentSummary+'</span>';
                     //discussion +='</b>';
-                    discussion +='</ul>';
+                    discussion +='</p>';
                
                     
                     discussion +='<font size="2" color="grey">';
