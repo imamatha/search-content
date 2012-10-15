@@ -74,7 +74,7 @@ function search() {
             var avatar="";
             var modifiedDate="";
             var createdDate="";
-            var replies="";
+            var replyCount="";
             var likeCount="";
             var type="";
             var username="";
@@ -88,7 +88,7 @@ function search() {
                     modifiedDate=row.modificationDate;
                     createdDate=row.creationDate;
                     likeCount=row.likeCount;
-                    replies=row.replies;
+                    replyCount=row.replyCount;
                     type=row.type;
                     avatar=row.author.avatarURL;
                     username=row.author.username;
