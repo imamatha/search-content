@@ -99,13 +99,14 @@ function search() {
                     discussion +='<ul>';
                    // discussion +='<li>&nbsp;</li>';
                     discussion +='<li>created by</li>';
+                    discussion +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
                     discussion +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     discussion +='</ul>';
                     discussion +='<ul>';
                     discussion +='<li>'+contentSummary+'</li>';
                     discussion +='</ul>';
                     discussion +='<ul>';
-                    discussion +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
+                   // discussion +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
                     //discussion +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     discussion +='<li>'+likeCount+'</li>';
                     discussion +='<li>'+modifiedDate+'</li>';
