@@ -103,7 +103,7 @@ function search() {
                     discussion +='</ul>';
                     discussion +='<h5>';
                     discussion +='<ul>';
-                    // discussion +='<li>&nbsp;</li>';
+                    discussion +='<li>&nbsp;</li>';
                     //discussion +='<li>created by <li>';
                     discussion +='<li>created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                    // discussion +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
@@ -120,19 +120,15 @@ function search() {
                     // discussion +='<li><img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/></li>';
                     // discussion +='<li><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     discussion +='<li>created:'+creationDate+'</li>';
-                    //discussion +='<li>Last Modified:<li>';
-                    discussion +='<li>Last Modified:'+modifiedDate+'</li>';
-                    //discussion +='Replies:';
-                    discussion +='<li>Replies:'+replyCount+'</li>';
-                   // discussion +='Likes:';
-                    discussion +='<li>Likes:'+likeCount+'</li>';
-                   //discussion +='<li>'+modifiedDate+'</li>';
+                    discussion +='<li>Last Modified:'+modifiedDate+'</li>';                
+                    discussion +='<li>Replies:'+replyCount+'</li>';                  
+                    discussion +='<li>Likes:'+likeCount+'</li>';              
                     discussion +='</ul>';
                     discussion +='</h5>';
-                    discussion +='<hr>';
-                    
+                    discussion +='<hr>';                   
                   
                }
+               
 			  if(row.type=="document")
                {
                      
