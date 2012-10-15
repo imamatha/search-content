@@ -135,16 +135,17 @@ function search() {
 			  if(row.type=="document")
                {
                      
-		     document +='<ul>';
+		    document +='<ul>';
                     document +='<li class="document" ><a href="'+url+'">'+subject+'</a></li>';
                     document +='</ul>';
                     
-                    document +='<h5>';
+                    document +='<font size="3" color="grey">';
                     document +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
                     //document +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
                     document +='<li>Created by<a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     document +='</ul>';
+                    document +='</font>';
                    
                     document +='<ul>';
                     document +='<b>';
@@ -152,14 +153,14 @@ function search() {
                     document +='</b>';
                     document +='</ul>';
                    
+                    document +='<font size="3" color="grey">';
                     document +='<ul>';                                       
                     document +='<li>Created:'+creationDate+'</li>';
                     document +='<li>Last Modified:'+modifiedDate+'</li>';                
                     document +='<li>Replies:'+replyCount+'</li>';                  
                     document +='<li>Likes:'+likeCount+'</li>';              
-                    document +='</ul>';
-                    
-                   document +='</h5>';
+                    document +='</ul>';                    
+                   document +='</font>';
                    document +='<hr>';                   
                   
                   
@@ -170,12 +171,13 @@ function search() {
                      update +='<li class="update" ><a href="'+url+'">'+contentSummary+'</a></li>';
                      update +='</ul>';
                     
-                     update +='<h5>';
+                     update +='<font size="3" color="grey">';
                      update +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
                      //update +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                      update +='<li>Created by<a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                      update +='</ul>';
+                     update +='</font>';
                    
                      update +='<ul>';
                      update +='<b>';
@@ -183,14 +185,15 @@ function search() {
                      update +='</b>';
                      update +='</ul>';
                    
+                     update +='<font size="3" color="grey">';
                      update +='<ul>';                                       
                      update +='<li>Created:'+creationDate+'</li>';
                      update +='<li>Last Modified:'+modifiedDate+'</li>';                
                      update +='<li>Replies:'+replyCount+'</li>';                  
                      update +='<li>Likes:'+likeCount+'</li>';              
                      update +='</ul>';
-                    
-                     update +='</h5>';
+                     update +='</font>';
+                         
                      update +='<hr>';                   
                   
                   
@@ -202,27 +205,29 @@ function search() {
                      post +='<li class="post" ><a href="'+url+'">'+subject+'</a></li>';
                      post +='</ul>';
                     
-                     post +='<h5>';
+                     post +='<font size="3" color="grey">';
                      post +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
                     // post +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                      post +='<li>Created by<a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                      post +='</ul>';
-                   
+                     post +='</font>';
+                     
                      post +='<ul>';
                      post +='<b>';
                      post +='<li>'+contentSummary+'</li>';
                      post +='</b>';
                      post +='</ul>';
                    
+                     post +='<font size="3" color="grey">';
                      post +='<ul>';                                       
                      post +='<li>Created:'+creationDate+'</li>';
                      post +='<li>Last Modified:'+modifiedDate+'</li>';                
                      post +='<li>Replies:'+replyCount+'</li>';                  
                      post +='<li>Likes:'+likeCount+'</li>';              
                      post +='</ul>';
-                    
-                     post +='</h5>';
+                     post +='</font>';
+                                        
                      post +='<hr>';                   
                   
                   
