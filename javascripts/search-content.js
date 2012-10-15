@@ -106,6 +106,7 @@ function search() {
                     //discussion +='<li>&nbsp;</li>';
                   //  discussion +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
                     discussion +='<li>Created by<a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    console.log("Author: "+author);
                     discussion +='</ul>';
                     discussion +='</font>';
                     
