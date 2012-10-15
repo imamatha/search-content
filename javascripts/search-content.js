@@ -129,6 +129,8 @@ function search() {
                    //discussion +='<li>'+modifiedDate+'</li>';
                     discussion +='</ul>';
                     discussion +='</h5>';
+                    discussion +='<hr>';
+                    
                   
                }
 			  if(row.type=="document")
