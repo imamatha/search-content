@@ -97,7 +97,7 @@ function search() {
                {
                      
 		    discussion +='<ul>';
-                    discussion +='<li class="discussion" <a href="'+url+'">'+subject+'</a>/>';
+                    discussion +='<li class="discussion" ><a href="'+url+'">'+subject+'</a></li>';
                    // discussion +='<li><a href=https://github.com/imamatha/search-content/blob/master/search-content.html></li>';
                     //discussion +='<li><a href="'+url+'">'+subject+'</a></li>';
                     discussion +='</ul>';
