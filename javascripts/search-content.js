@@ -124,7 +124,7 @@ function search() {
                    discussion +='Likes:';
                    discussion +='<li>'+likeCount+'</li>';
                   // discussion +='<li>'+modifiedDate+'</li>';
-                     discussion +='<li>'+replies+'</li>';
+                     discussion +='<li>'+replyCount+'</li>';
                    discussion +='</ul>';
                    discussion +='</h5>';
                   
