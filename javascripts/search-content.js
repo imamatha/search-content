@@ -125,12 +125,13 @@ function search() {
                     discussion +='<li>Likes:'+likeCount+'</li>';
                     discussion +='</ul>';
                     discussion +='</font>';
-                 
+                    
+                    discussion +='</ul>'
                     
                   //  discussion +='</h5>';
                     discussion +='<hr>';   
                     //discussion +='</p>';
-                    discussion +='</ul>'
+                  
                   
                }
                
