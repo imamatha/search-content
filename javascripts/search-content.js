@@ -206,7 +206,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                    
                     document +='<font size="2" color="grey">';
                     document +='<ul>';                                       
-                    document +='<li>Created:'+creationDate+'</li>';
+                    //document +='<li>Created:'+creationDate+'</li>';
                     document +='Last Modified:'+modifiedDate+'';                
                     document +='<li>Replies:'+replyCount+'</li>';                  
                     document +='Likes:'+likeCount+'';              
@@ -238,7 +238,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                    
                      update +='<font size="2" color="grey">';
                      update +='<ul>';                                       
-                     update +='<li>Created:'+creationDate+'</li>';
+                     //update +='<li>Created:'+creationDate+'</li>';
                      update +='Last Modified:'+modifiedDate+'';                
                      update +='<li>Replies:'+replyCount+'</li>';                  
                      update +='Likes:'+likeCount+'';              
@@ -270,7 +270,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                    
                      post +='<font size="2" color="grey">';
                      post +='<ul>';                                       
-                     post +='<li>Created:'+creationDate+'</li>';
+                    // post +='<li>Created:'+creationDate+'</li>';
                      post +='Last Modified:'+modifiedDate+'';                
                      post +='<li>Replies:'+replyCount+'</li>';                  
                      post +='Likes:'+likeCount+'';              
