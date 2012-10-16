@@ -2,12 +2,20 @@
 <script type="text/javascript" src="javascripts/search-content.js"></script>
 
  <style type="text/css">
- #search-results ul li { display: inline; padding: .2em 1em; }
+#search-results ul li { display: inline; padding: .2em 2em; }
+
+#search-results ul { padding: -.2em -.5em; }
 
 #search-results ul li a
 {
 text-decoration: none;
 padding: .1em 1em;
+}
+
+#search-results ul li a.nopad
+{
+text-decoration: none;
+padding: 0 0;
 }
 
 #search-results ul li a:hover
@@ -24,7 +32,7 @@ li.document {
  background-repeat:no-repeat;
 }
 li.update {
- background-image: url('../images/poll.png' );
+ background-image: url('../images/status.png' );
  background-repeat:no-repeat;
 }
 li.post {
@@ -32,16 +40,30 @@ li.post {
  background-repeat:no-repeat;
 }
 
+p {
+    border: 0 none;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
 </style>
 <h3 align="center">Search </h3>
-
-<table border= "0" align="center">
-    <tr>
-        <td><input type="text" id="query" size="66"/></td>
-        <td><button id="search">Search</button></td>
-    </tr>
-    
+<table align="center">
+ <tr>
+  <td>
+   <input type="text" id="query" size="66"/>
+  </td>
+  <td>
+   <button id="search" type="Submit">Search</button>
+  </td>
+ </tr>
 </table>
+
 <hr>
 
 <div id="search-info" style="display: none">

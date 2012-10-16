@@ -5,6 +5,7 @@ function init() {
     gadgets.window.adjustHeight();
    
 }
+
  /* function getISOStrict(date) {
    
    if (Date.prototype.toISOString) {
@@ -95,62 +96,69 @@ function search() {
                
 			   if(row.type=="discussion")
                {
-                     
+               	                   
+                    discussion +='<ol>';
 		    discussion +='<ul>';
-                    discussion +='<li class="discussion" ><a href="'+url+'">'+subject+'</a></li>';
-                    discussion +='</ul>';
+                    discussion +='<li class="discussion"><a href="'+url+'" target="_apps">'+subject+'</a></li>';
+                    discussion +='</ul>';  
                     
-                    discussion +='<h5>';
-                    discussion +='<ul>';
+                    discussion +='<font size="2" color="grey">';               
+                    discussion +='<ul>';                   
                     //discussion +='<li>&nbsp;</li>';
-                    discussion +='<li>created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    //  discussion +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
+                    discussion +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    //console.log("Author: "+author);                   
                     discussion +='</ul>';
-                   
-                    discussion +='<ul>';
-                    discussion +='<b>';
-                    discussion +='<li>'+contentSummary+'</li>';
-                    discussion +='</b>';
-                    discussion +='</ul>';
-                   
-                    discussion +='<ul>';                                       
-                    discussion +='<li>created:'+creationDate+'</li>';
-                    discussion +='<li>Last Modified:'+modifiedDate+'</li>';                
-                    discussion +='<li>Replies:'+replyCount+'</li>';                  
-                    discussion +='<li>Likes:'+likeCount+'</li>';              
+                    discussion +='</font>';
+                                                      
+                    discussion +='<ul>';                   
+                    discussion +='<li>'+contentSummary+'</li>';                   
                     discussion +='</ul>';
                     
-                    discussion +='</h5>';
-                    discussion +='<hr>';                   
-                  
+                    discussion +='<font size="2" color="grey">';                                 
+                    discussion +='<ul>';                    
+                    discussion +='<li>Created:'+creationDate+'</li>';
+                    discussion +='Last Modified:'+modifiedDate+'';                
+                    discussion +='<li>Replies:'+replyCount+'</li>';                  
+                    discussion +='Likes:'+likeCount+'';                        
+                    discussion +='</ul>';
+                    discussion +='</font>';
+                    
+                    discussion +='</ol>';
+                    discussion +='<color="grey">';        
+                    discussion +='<hr>';  
+                    discussion +='</color>;
+                   
+                   
                }
                
 			  if(row.type=="document")
                {
                      
-		     document +='<ul>';
-                    document +='<li class="document" ><a href="'+url+'">'+subject+'</a></li>';
+		    document +='<ul>';
+                    document +='<li class="document" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
                     document +='</ul>';
                     
-                    document +='<h5>';
+                    document +='<font size="2" color="grey">';
                     document +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
-                    document +='<li>created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    //document +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
+                    document +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    document +='</ul>';
+                    document +='</font>';
+                   
+                    document +='<ul>';                    
+                    document +='<li>'+contentSummary+'</li>';                   
                     document +='</ul>';
                    
-                    document +='<ul>';
-                    document +='<b>';
-                    document +='<li>'+contentSummary+'</li>';
-                    document +='</b>';
-                    document +='</ul>';
-                   
+                    document +='<font size="2" color="grey">';
                     document +='<ul>';                                       
-                    document +='<li>created:'+creationDate+'</li>';
+                    document +='<li>Created:'+creationDate+'</li>';
                     document +='<li>Last Modified:'+modifiedDate+'</li>';                
                     document +='<li>Replies:'+replyCount+'</li>';                  
                     document +='<li>Likes:'+likeCount+'</li>';              
-                    document +='</ul>';
-                    
-                   document +='</h5>';
+                    document +='</ul>';                    
+                   document +='</font>';
                    document +='<hr>';                   
                   
                   
@@ -158,29 +166,30 @@ function search() {
 			   if(row.type=="update")
                {
                      update +='<ul>';
-                     update +='<li class="update" ><a href="'+url+'">'+subject+'</a></li>';
+                     update +='<li class="update" ><a href="'+url+'" target="_apps">'+contentSummary+'</a></li>';
                      update +='</ul>';
                     
-                     update +='<h5>';
+                     update +='<font size="2" color="grey">';
                      update +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
-                     update +='<li>created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                     //update +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                     update +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                      update +='</ul>';
+                     update +='</font>';
                    
-                     update +='<ul>';
-                     update +='<b>';
+                     update +='<ul>';                   
                      update +='<li>'+contentSummary+'</li>';
-                     update +='</b>';
                      update +='</ul>';
                    
+                     update +='<font size="2" color="grey">';
                      update +='<ul>';                                       
-                     update +='<li>created:'+creationDate+'</li>';
+                     update +='<li>Created:'+creationDate+'</li>';
                      update +='<li>Last Modified:'+modifiedDate+'</li>';                
                      update +='<li>Replies:'+replyCount+'</li>';                  
                      update +='<li>Likes:'+likeCount+'</li>';              
                      update +='</ul>';
-                    
-                     update +='</h5>';
+                     update +='</font>';
+                         
                      update +='<hr>';                   
                   
                   
@@ -189,29 +198,30 @@ function search() {
                {
                      
 				post +='<ul>';
-                     post +='<li class="post" ><a href="'+url+'">'+subject+'</a></li>';
+                     post +='<li class="post" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
                      post +='</ul>';
                     
-                     post +='<h5>';
+                     post +='<font size="2" color="grey">';
                      post +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
-                     post +='<li>created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    // post +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                     post +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                     post +='</ul>';
+                     post +='</font>';
+                     
+                     post +='<ul>';                   
+                     post +='<li>'+contentSummary+'</li>';                   
                      post +='</ul>';
                    
-                     post +='<ul>';
-                     post +='<b>';
-                     post +='<li>'+contentSummary+'</li>';
-                     post +='</b>';
-                     post +='</ul>';
-                   
+                     post +='<font size="2" color="grey">';
                      post +='<ul>';                                       
-                     post +='<li>created:'+creationDate+'</li>';
+                     post +='<li>Created:'+creationDate+'</li>';
                      post +='<li>Last Modified:'+modifiedDate+'</li>';                
                      post +='<li>Replies:'+replyCount+'</li>';                  
                      post +='<li>Likes:'+likeCount+'</li>';              
                      post +='</ul>';
-                    
-                     post +='</h5>';
+                     post +='</font>';
+                                        
                      post +='<hr>';                   
                   
                   
@@ -223,8 +233,7 @@ function search() {
 			html +="<br>"+document;
 			html +="<br>"+update;
 			html +="<br>"+post;
-			html +="<br>"+blog;
-			
+				
             console.log(html);
             $("#search-results").html(html);
             $("#search-info").show();
