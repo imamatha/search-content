@@ -153,7 +153,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                {
                	     // discussion +='<table border="1">';             
                     discussion +='<div>';
-                    discussion +='<p class="small">';
+                    discussion +='<p line-height:70%>';
                    // discussion +='<ol>';
 		    discussion +='<ul>';
                     discussion +='<li class="discussion"><a href="'+url+'" target="_apps">'+subject+'</a></li>';
