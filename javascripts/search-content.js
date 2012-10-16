@@ -165,10 +165,12 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     //console.log("Author: "+author);                   
                     discussion +='</ul>';
                     discussion +='</font>';
-                                                      
+                    
+                    discussion +='<font size="2" color="black">';                                    
                     discussion +='<ul>';                   
-                    discussion +='<h5>'+contentSummary+'</h5>';                   
+                    discussion +='<li>'+contentSummary+'</li>';                   
                     discussion +='</ul>';
+                     discussion +='</font>';
                     
                     discussion +='<font size="2" color="grey">';                                 
                     discussion +='<ul>';                    
