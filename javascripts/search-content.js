@@ -96,9 +96,9 @@ function search() {
                
 			   if(row.type=="discussion")
                {
-                   // discussion +='<ol>'
+                  
 		    discussion +='<ul>';
-                    discussion +='<li class="discussion" ><a href="'+url+'">'+subject+'</a></li>';
+                    discussion +='<li class="discussion" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
                     discussion +='</ul>';  
                     
                     discussion +='<font size="2" color="grey">';               
@@ -116,7 +116,7 @@ function search() {
                     
                     discussion +='<font size="2" color="grey">';                                 
                     discussion +='<ul>';   
-                    discussion +='<font size="2" color="grey">';
+                   // discussion +='<font size="2" color="grey">';
                     discussion +='<li>Created:'+creationDate+'</li>';
                     discussion +='<li>Last Modified:'+modifiedDate+'</li>';                
                     discussion +='<li>Replies:'+replyCount+'</li>';                  
