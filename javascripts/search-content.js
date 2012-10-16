@@ -97,7 +97,7 @@ function search() {
 			   if(row.type=="discussion")
                {
                	    
-                    discussion +='<table border= "">';
+                    discussion +='<table border="1">';
                     discussion +='<ol>';
 		    discussion +='<ul>';
                     discussion +='<li class="discussion"><a href="'+url+'" target="_apps">'+subject+'</a></li>';
