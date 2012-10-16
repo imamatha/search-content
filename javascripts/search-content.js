@@ -187,7 +187,8 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     discussion +='</div>';
                    // discussion +='</table>';
                          
-                   discussion +='<hr size="1" color="lightgrey">';                    
+                   discussion +='<hr size="1" color="lightgrey">';
+                   discussion +='<br>';
                                      
                }
                
