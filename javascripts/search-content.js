@@ -182,7 +182,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     discussion +='</ol>';
                     discussion +='</table>';
                          
-                   discussion +='<hr size="1" color="grey">';                    
+                   discussion +='<hr size="1" color="lightgrey">';                    
                                      
                }
                
@@ -214,7 +214,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     document +='</ul>';                    
                     document +='</font>';
                     document +='</ol>';
-                    document +='<hr>';                   
+                    document +='<hr size="1" color="lightgrey">';                     
                   
                   
                }
@@ -246,7 +246,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      update +='</ul>';
                      update +='</font>';
                      update +='</ol>';   
-                     update +='<hr>';                  
+                     update +='<hr size="1" color="lightgrey">';                  
                                     
                 }
                 
