@@ -126,10 +126,8 @@ function search() {
                     
                     discussion +='</ol>';
                          
-                    discussion +='<hr>';  
-                   
-                   
-                   
+                    discussion +='<hr>';                    
+                                     
                }
                
 			  if(row.type=="document")
@@ -192,11 +190,11 @@ function search() {
                      update +='</ul>';
                      update +='</font>';
                      update +='</ol>';   
-                     update +='<hr>';                   
-                  
-                  
-               }
-			   if(row.type=="post")
+                     update +='<hr>';                  
+                                    
+                }
+                
+	            if(row.type=="post")
                {
                      post +='<ol>';
 	             post +='<ul>';
@@ -224,13 +222,10 @@ function search() {
                      post +='</ul>';
                      post +='</font>';
                      post +='</ol>';                
-                     post +='<hr>';                   
-                  
-                  
-               }
+                     post +='<hr>';                
+                                  
             });
-            
-            
+                       
                         html +=discussion;
 			html +="<br>"+document;
 			html +="<br>"+update;
