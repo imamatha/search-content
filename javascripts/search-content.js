@@ -210,7 +210,7 @@ function search() {
                      post +='</font>';
                      
                      post +='<ul>';                   
-                     post +='<li>'+contentSummary+'</li>';                   
+                     post +='<li><p>'+contentSummary+'</p></li>';                   
                      post +='</ul>';
                    
                      post +='<font size="2" color="grey">';
