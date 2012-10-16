@@ -195,7 +195,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     document +='<li class="document" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
                     document +='</ul>';
                     
-                    document +='<font size="2" color="black">';
+                    document +='<font size="2" color="grey">';
                     document +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
                     //document +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
