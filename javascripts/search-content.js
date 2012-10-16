@@ -116,7 +116,7 @@ function search() {
                     
                     discussion +='<font size="2" color="grey">';                                 
                     discussion +='<ul>';   
-                   /discussion +='<font size="2" color="grey">';
+                    discussion +='<font size="2" color="grey">';
                     discussion +='<li>Created:'+creationDate+'</li>';
                     discussion +='<li>Last Modified:'+modifiedDate+'</li>';                
                     discussion +='<li>Replies:'+replyCount+'</li>';                  
