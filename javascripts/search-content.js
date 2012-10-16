@@ -110,10 +110,8 @@ function search() {
                      discussion +='</ul>';
                      discussion +='</font>';
                                                       
-                    discussion +='<ul>';
-                   // discussion +='<b>';
-                    discussion +='<li>'+contentSummary+'</li>';
-                    //discussion +='</b>';
+                    discussion +='<ul>';                   
+                    discussion +='<li>'+contentSummary+'</li>';                   
                     discussion +='</ul>';
                     
                     discussion +='<font size="2" color="grey">';                                 
@@ -124,15 +122,8 @@ function search() {
                     discussion +='<li>Replies:'+replyCount+'</li>';                  
                     discussion +='<li>Likes:'+likeCount+'</li>';
                     discussion +='</ul>';
-                    discussion +='</font>';
-                    
-                    //discussion +='</ol>'
-                    
-                  //  discussion +='</h5>';
-                    discussion +='<hr>';   
-                    //discussion +='</p>';
-                  
-                  
+                    discussion +='</font>';                  
+                    discussion +='<hr>';                                                     
                }
                
 			  if(row.type=="document")
