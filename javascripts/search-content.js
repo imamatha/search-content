@@ -151,7 +151,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                
 			   if(row.type=="discussion")
                {
-               	                   
+               	      discussion +='<table border="1">';             
                     discussion +='<ol>';
 		    discussion +='<ul>';
                     discussion +='<li class="discussion"><a href="'+url+'" target="_apps">'+subject+'</a></li>';
@@ -180,8 +180,9 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     discussion +='</font>';
                     
                     discussion +='</ol>';
+                    discussion +='</table>';
                          
-                    discussion +='<hr>';                    
+                   // discussion +='<hr>';                    
                                      
                }
                
