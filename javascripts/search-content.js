@@ -278,7 +278,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      post +='</ul>';
                      post +='</font>';
                      post +='</ol>';                
-                    // post +='<hr>'; 
+                     post +='<hr size="1" color="lightgrey">'; 
                }
                                   
             });
