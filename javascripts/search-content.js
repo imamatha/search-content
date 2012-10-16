@@ -125,9 +125,9 @@ function search() {
                     discussion +='</font>';
                     
                     discussion +='</ol>';
-                    discussion +='<color="grey">';        
+                         
                     discussion +='<hr>';  
-                    discussion +='</color>;
+                   
                    
                    
                }
