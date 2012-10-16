@@ -134,7 +134,7 @@ function search() {
                
 			  if(row.type=="document")
                {
-                     
+                     document +='<ol>';
 		    document +='<ul>';
                     document +='<li class="document" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
                     document +='</ul>';
@@ -159,6 +159,7 @@ function search() {
                     document +='<li>Likes:'+likeCount+'</li>';              
                     document +='</ul>';                    
                    document +='</font>';
+                    document +='<ol>';
                    document +='<hr>';                   
                   
                   
