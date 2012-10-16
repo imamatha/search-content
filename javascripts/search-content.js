@@ -203,7 +203,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     document +='</ul>';
                     document +='</font>';
                     
-                    document +='<font size="2" color="grey">';     
+                    document +='<font size="2" color="black">';     
                     document +='<ul>';                    
                     document +='<li>'+contentSummary+'</li>';                   
                     document +='</ul>';
