@@ -159,7 +159,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     discussion +='<li class="discussion"><a href="'+url+'" target="_apps">'+subject+'</a></li>';
                     discussion +='</ul>';  
                     
-                    discussion +='<font size="2" color="grey">';               
+                    discussion +='<font size="2" color="black">';               
                     discussion +='<ul>';                   
                     //discussion +='<li>&nbsp;</li>';
                     //  discussion +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
