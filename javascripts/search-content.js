@@ -122,9 +122,10 @@ function search() {
                     discussion +='<li>Replies:'+replyCount+'</li>';                  
                     discussion +='<li>Likes:'+likeCount+'</li>';
                     discussion +='</ul>';
-                    discussion +='</font>';                  
-                    discussion +='<hr>';  
+                    discussion +='</font>';
                     discussion =='</ul>';
+                    discussion +='<hr>';  
+                    //discussion =='</ul>';
                }
                
 			  if(row.type=="document")
