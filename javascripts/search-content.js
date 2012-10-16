@@ -110,17 +110,18 @@ function search() {
                      discussion +='</ul>';
                      discussion +='</font>';
                                                       
-                    //discussion +='<ul>';                   
+                    discussion +='<ul>';                   
                     discussion +='<li>'+contentSummary+'</li>';                   
-                    //discussion +='</ul>';
+                    discussion +='</ul>';
                     
                     discussion +='<font size="2" color="grey">';                                 
                     discussion +='<ul>';   
-                   // discussion +='<font size="2" color="grey">';
+                   /discussion +='<font size="2" color="grey">';
                     discussion +='<li>Created:'+creationDate+'</li>';
                     discussion +='<li>Last Modified:'+modifiedDate+'</li>';                
                     discussion +='<li>Replies:'+replyCount+'</li>';                  
                     discussion +='<li>Likes:'+likeCount+'</li>';
+                    discussion +='</font>';
                     discussion +='</ul>';
                     discussion +='</font>';
                     discussion =='</ul>'
