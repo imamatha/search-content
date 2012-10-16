@@ -278,15 +278,15 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      post +='</ul>';
                      post +='</font>';
                      post +='</ol>';                
-                     post +='<hr>'; 
+                    // post +='<hr>'; 
                }
                                   
             });
                        
                         html +=discussion;
-			html +="<br>"+document;
-			html +="<br>"+update;
-			html +="<br>"+post;
+			html +=document;
+			html +=update;
+			html +=post;
 				
             console.log(html);
             $("#search-results").html(html);
