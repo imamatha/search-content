@@ -158,9 +158,9 @@ function search() {
                     document +='<li>Replies:'+replyCount+'</li>';                  
                     document +='<li>Likes:'+likeCount+'</li>';              
                     document +='</ul>';                    
-                   document +='</font>';
-                    document +='<ol>';
-                   document +='<hr>';                   
+                    document +='</font>';
+                    document +='</ol>';
+                    document +='<hr>';                   
                   
                   
                }
