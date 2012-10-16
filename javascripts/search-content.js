@@ -96,7 +96,7 @@ function search() {
                
 			   if(row.type=="discussion")
                {
-                    discussion =='<ul>'
+                   
 		    discussion +='<ul>';
                     discussion +='<li class="discussion" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
                     discussion +='</ul>';  
@@ -107,26 +107,24 @@ function search() {
                     //  discussion +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
                     discussion +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     //console.log("Author: "+author);                   
-                     discussion +='</ul>';
-                     discussion +='</font>';
+                    discussion +='</ul>';
+                    discussion +='</font>';
                                                       
-                   // discussion +='<ul>';                   
+                    discussion +='<ul>';                   
                     discussion +='<li>'+contentSummary+'</li>';                   
-                   // discussion +='</ul>';
+                    discussion +='</ul>';
                     
                     discussion +='<font size="2" color="grey">';                                 
-                    discussion +='<ul>';   
-                    discussion +='<font size="2" color="grey">';
+                    discussion +='<ul>';                      
                     discussion +='<li>Created:'+creationDate+'</li>';
                     discussion +='<li>Last Modified:'+modifiedDate+'</li>';                
                     discussion +='<li>Replies:'+replyCount+'</li>';                  
-                    discussion +='<li>Likes:'+likeCount+'</li>';
-                   // discussion +='</font>';
+                    discussion +='<li>Likes:'+likeCount+'</li>';                
                     discussion +='</ul>';
                     discussion +='</font>';
-                    discussion =='</ul>'
+                  
                     discussion +='<hr>';  
-                    //discussion =='</ul>';
+                   
                }
                
 			  if(row.type=="document")
