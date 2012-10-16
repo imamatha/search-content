@@ -110,9 +110,9 @@ function search() {
                      discussion +='</ul>';
                      discussion +='</font>';
                                                       
-                    discussion +='<ul>';                   
+                    //discussion +='<ul>';                   
                     discussion +='<li>'+contentSummary+'</li>';                   
-                    discussion +='</ul>';
+                    //discussion +='</ul>';
                     
                     discussion +='<font size="2" color="grey">';                                 
                     discussion +='<ul>';   
