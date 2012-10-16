@@ -222,7 +222,8 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     document +='</ul>';                    
                     document +='</font>';
                     document +='</div>';
-                    document +='<hr size="1" color="lightgrey">';                     
+                    document +='<hr size="1" color="lightgrey">';   
+                    document +='<br>';
                   
                   
                }
@@ -256,7 +257,8 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      update +='</ul>';
                      update +='</font>';
                      update +='</div>';   
-                     update +='<hr size="1" color="lightgrey">';                  
+                     update +='<hr size="1" color="lightgrey">'; 
+                     update +='<br>';
                                     
                 }
                 
@@ -291,6 +293,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      post +='</font>';
                      post +='</div>';                
                      post +='<hr size="1" color="lightgrey">'; 
+                     post +='<br>';
                }
                                   
             });
