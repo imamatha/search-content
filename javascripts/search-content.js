@@ -167,7 +167,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     discussion +='</font>';
                                                       
                     discussion +='<ul>';                   
-                    discussion +='<h5><li>'+contentSummary+'</li></h5>';                   
+                    discussion +='<h5>'+contentSummary+'</h5>';                   
                     discussion +='</ul>';
                     
                     discussion +='<font size="2" color="grey">';                                 
