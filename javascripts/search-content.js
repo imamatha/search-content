@@ -195,7 +195,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     document +='<li class="document" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
                     document +='</ul>';
                     
-                    document +='<font size="2" color="grey">';
+                    document +='<font size="2" color="black">';
                     document +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
                     //document +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
@@ -237,7 +237,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      update +='</ul>';
                      update +='</font>';
                      
-                     update +='<font size="2" color="grey">';     
+                     update +='<font size="2" color="black">';     
                      update +='<ul>';                   
                      update +='<li>'+contentSummary+'</li>';
                      update +='</ul>';
@@ -271,7 +271,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      post +='</ul>';
                      post +='</font>';
                      
-                     post +='<font size="2" color="grey">';     
+                     post +='<font size="2" color="black">';     
                      post +='<ul>';                   
                      post +='<li>'+contentSummary+'</li>';                   
                      post +='</ul>';
