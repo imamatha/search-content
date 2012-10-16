@@ -40,6 +40,11 @@ li.post {
  background-repeat:no-repeat;
 }
 
+li.withborder {
+        border-style: dashed;
+        border-width: medium;        /* sets border width on all sides */
+        border-color: lime;
+}
 /*p {
     border: 0 none;
     font-family: inherit;
@@ -49,14 +54,14 @@ li.post {
     margin: 0;
     padding: 0;
     vertical-align: baseline;
-}*/
+}
 username {
         white-space:nowrap;
         vertical-align:top;
         text-align:right;
         width:auto;
         color:DodgerBlue;
-    }
+    }*/
 
 
 </style>
@@ -75,7 +80,10 @@ username {
 <hr>
 
 <div id="search-info" style="display: none">
+
+<li class="withborder">
 <h3>Search Results</h3> <hr>
     <div id="search-results"></div>
+</li>
 </div>
 
