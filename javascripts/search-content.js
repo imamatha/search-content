@@ -115,11 +115,13 @@ function search() {
                     discussion +='</ul>';
                     
                     discussion +='<font size="2" color="grey">';                                 
-                    discussion +='<ul>';                      
-                    discussion +='<li>Created:'+creationDate+'</li>';
+                    discussion +='<ul>';
+                    discussion +='<li>';   
+                    discussion +='Created:'+creationDate+'';
                     discussion +='Last Modified:'+modifiedDate+'';                
-                    discussion +='<li>Replies:'+replyCount+'</li>';                  
-                    discussion +='<li>Likes:'+likeCount+'</li>';                
+                    discussion +='Replies:'+replyCount+'';                  
+                    discussion +='Likes:'+likeCount+'';   
+                    discussion +='</li>';   
                     discussion +='</ul>';
                     discussion +='</font>';
                     discussion +='</ol>';
