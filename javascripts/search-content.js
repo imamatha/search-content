@@ -182,7 +182,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     discussion +='</ol>';
                     discussion +='</table>';
                          
-                   // discussion +='<hr>';                    
+                   discussion +='<hr>';                    
                                      
                }
                
