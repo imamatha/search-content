@@ -154,9 +154,9 @@ function search() {
                     document +='<font size="2" color="grey">';
                     document +='<ul>';                                       
                     document +='<li>Created:'+creationDate+'</li>';
-                    document +='<li>Last Modified:'+modifiedDate+'</li>';                
+                    document +='Last Modified:'+modifiedDate+'';                
                     document +='<li>Replies:'+replyCount+'</li>';                  
-                    document +='<li>Likes:'+likeCount+'</li>';              
+                    document +='Likes:'+likeCount+'';              
                     document +='</ul>';                    
                     document +='</font>';
                     document +='</ol>';
@@ -166,6 +166,7 @@ function search() {
                }
 			   if(row.type=="update")
                {
+                     update +='<ol>';
                      update +='<ul>';
                      update +='<li class="update" ><a href="'+url+'" target="_apps">'+contentSummary+'</a></li>';
                      update +='</ul>';
@@ -185,20 +186,20 @@ function search() {
                      update +='<font size="2" color="grey">';
                      update +='<ul>';                                       
                      update +='<li>Created:'+creationDate+'</li>';
-                     update +='<li>Last Modified:'+modifiedDate+'</li>';                
+                     update +='Last Modified:'+modifiedDate+'';                
                      update +='<li>Replies:'+replyCount+'</li>';                  
-                     update +='<li>Likes:'+likeCount+'</li>';              
+                     update +='Likes:'+likeCount+'';              
                      update +='</ul>';
                      update +='</font>';
-                         
+                     update +='</ol>';   
                      update +='<hr>';                   
                   
                   
                }
 			   if(row.type=="post")
                {
-                     
-				post +='<ul>';
+                     post +='<ol>';
+	             post +='<ul>';
                      post +='<li class="post" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
                      post +='</ul>';
                     
@@ -217,12 +218,12 @@ function search() {
                      post +='<font size="2" color="grey">';
                      post +='<ul>';                                       
                      post +='<li>Created:'+creationDate+'</li>';
-                     post +='<li>Last Modified:'+modifiedDate+'</li>';                
+                     post +='Last Modified:'+modifiedDate+'';                
                      post +='<li>Replies:'+replyCount+'</li>';                  
-                     post +='<li>Likes:'+likeCount+'</li>';              
+                     post +='Likes:'+likeCount+'';              
                      post +='</ul>';
                      post +='</font>';
-                                        
+                     post +='</ol>';                
                      post +='<hr>';                   
                   
                   
