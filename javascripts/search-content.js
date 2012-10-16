@@ -73,7 +73,7 @@ function search() {
             var contentSummary="";
             var author="";
             var avatar="";
-            var modifiedDate="";           
+            var createdDate="";           
             var replyCount="";
             var likeCount="";
             var type="";
@@ -88,7 +88,7 @@ function search() {
                     subject=row.subject;
                     contentSummary=row.contentSummary;
                     author=row.author.name;
-                    modifiedDate=row.modificationDate;                   
+                    createdDate=row.creationDate;                   
                     likeCount=row.likeCount;
                     replyCount=row.replyCount;
                     type=row.type;
@@ -172,8 +172,8 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     
                     discussion +='<font size="2" color="grey">';                                 
                     discussion +='<ul>';                    
-                    discussion +='<li>Created:'+newDate+'</li>';
-                    discussion +='Last Modified:'+modifiedDate+'';                    
+                    discussion +='<li>Created:'+createdDate+'</li>';
+                    discussion +='Last Modified:'+newDate+'';                    
                     discussion +='<li>Replies:'+replyCount+'</li>';                  
                     discussion +='Likes:'+likeCount+'';                        
                     discussion +='</ul>';
@@ -206,8 +206,8 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                    
                     document +='<font size="2" color="grey">';
                     document +='<ul>';                                       
-                    document +='<li>Created:'+newDate+'</li>';
-                    document +='Last Modified:'+modifiedDate+'';                
+                    document +='<li>Created:'+createdDate+'</li>';
+                    document +='Last Modified:'+newDate+'';                
                     document +='<li>Replies:'+replyCount+'</li>';                  
                     document +='Likes:'+likeCount+'';              
                     document +='</ul>';                    
@@ -238,8 +238,8 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                    
                      update +='<font size="2" color="grey">';
                      update +='<ul>';                                       
-                     update +='<li>Created:'+newDate+'</li>';
-                     update +='Last Modified:'+modifiedDate+'';                
+                     update +='<li>Created:'+createdDate+'</li>';
+                     update +='Last Modified:'+newDate+'';                
                      update +='<li>Replies:'+replyCount+'</li>';                  
                      update +='Likes:'+likeCount+'';              
                      update +='</ul>';
@@ -270,8 +270,8 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                    
                      post +='<font size="2" color="grey">';
                      post +='<ul>';                                       
-                    post +='<li>Created:'+newDate+'</li>';
-                     post +='Last Modified:'+modifiedDate+'';                
+                    post +='<li>Created:'+createdDate+'</li>';
+                     post +='Last Modified:'+newDate+'';                
                      post +='<li>Replies:'+replyCount+'</li>';                  
                      post +='Likes:'+likeCount+'';              
                      post +='</ul>';
