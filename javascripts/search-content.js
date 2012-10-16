@@ -191,7 +191,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                
 			  if(row.type=="document")
                {
-                     document +='<ol>';
+                     document +='<div>';
 		    document +='<ul>';
                     document +='<li class="document" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
                     document +='</ul>';
@@ -218,14 +218,14 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     document +='Likes:'+likeCount+'';              
                     document +='</ul>';                    
                     document +='</font>';
-                    document +='</ol>';
+                    document +='</div>';
                     document +='<hr size="1" color="lightgrey">';                     
                   
                   
                }
 			   if(row.type=="update")
                {
-                     update +='<ol>';
+                     update +='<div>';
                      update +='<ul>';
                      update +='<li class="update" ><a href="'+url+'" target="_apps">'+contentSummary+'</a></li>';
                      update +='</ul>';
@@ -252,14 +252,14 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      update +='Likes:'+likeCount+'';              
                      update +='</ul>';
                      update +='</font>';
-                     update +='</ol>';   
+                     update +='</div>';   
                      update +='<hr size="1" color="lightgrey">';                  
                                     
                 }
                 
 	            if(row.type=="post")
                {
-                     post +='<ol>';
+                     post +='<div>';
 	             post +='<ul>';
                      post +='<li class="post" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
                      post +='</ul>';
@@ -286,7 +286,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      post +='Likes:'+likeCount+'';              
                      post +='</ul>';
                      post +='</font>';
-                     post +='</ol>';                
+                     post +='</div>';                
                      post +='<hr size="1" color="lightgrey">'; 
                }
                                   
