@@ -222,7 +222,8 @@ function search() {
                      post +='</ul>';
                      post +='</font>';
                      post +='</ol>';                
-                     post +='<hr>';                
+                     post +='<hr>'; 
+               }
                                   
             });
                        
