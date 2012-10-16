@@ -73,12 +73,14 @@ function search() {
             var contentSummary="";
             var author="";
             var avatar="";
-            var modifiedDate="";
-            var creationDate="";
+            var modifiedDate="";           
             var replyCount="";
             var likeCount="";
             var type="";
             var username="";
+            var myDate="";
+            var str="";
+
             
             
             $.each(rows, function(index, row) {   
@@ -86,13 +88,66 @@ function search() {
                     subject=row.subject;
                     contentSummary=row.contentSummary;
                     author=row.author.name;
-                    modifiedDate=row.modificationDate;
-                    creationDate=row.creationDate;
+                    modifiedDate=row.modificationDate;                   
                     likeCount=row.likeCount;
                     replyCount=row.replyCount;
                     type=row.type;
                     avatar=row.author.avatarURL;
                     username=row.author.username;
+                    str=row.modificationDate.substr(0,10);
+                    myDate=str; 
+                    myDate=myDate.split("-"); 
+                    dateM=myDate[1];
+
+       function monthConvert(d){
+
+  var outMonth="";
+    switch (d) {
+        case '01':
+    outMonth= "Jan";
+    break;
+  case '02':
+   outMonth= "Feb";
+    break;
+  case '03':
+    outMonth= "Mar";
+    break;
+  case '04':
+    outMonth= "Apr";
+break;
+case '05':
+    outMonth= "May";
+    break;
+  case '06':
+    outMonth= "Jun";
+    break;
+  case '07':
+    outMonth= "Jul";
+    break;
+  case '08':
+    outMonth= "Aug";
+break;
+case '09':
+    outMonth= "Sep";
+    break;
+  case '10':
+    outMonth= "Oct";
+    break;
+  case '11':
+    outMonth= "Nov";
+    break;
+  case '12':
+    outMonth= "Dec";
+break;
+}
+return outMonth;
+}
+
+var finalMonth=monthConvert(dateM);
+
+var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
+
+
                
 			   if(row.type=="discussion")
                {
@@ -117,8 +172,8 @@ function search() {
                     
                     discussion +='<font size="2" color="grey">';                                 
                     discussion +='<ul>';                    
-                    discussion +='<li>Created:'+creationDate+'</li>';
-                    discussion +='Last Modified:'+modifiedDate+'';                
+                    discussion +='<li>Created:'+newDate+'</li>';
+                    discussion +='Last Modified:'+modifiedDate+'';                    
                     discussion +='<li>Replies:'+replyCount+'</li>';                  
                     discussion +='Likes:'+likeCount+'';                        
                     discussion +='</ul>';
