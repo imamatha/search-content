@@ -98,7 +98,7 @@ function search() {
                {
                    
 		    discussion +='<ul>';
-                    discussion +='<li class="discussion"><a href="'+url+'" target="_apps">'+subject+'</a></li>';
+                    discussion +='<class="discussion"><a href="'+url+'" target="_apps">'+subject+'</a>';
                     discussion +='</ul>';  
                     
                     discussion +='<font size="2" color="grey">';               
