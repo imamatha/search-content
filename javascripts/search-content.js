@@ -96,7 +96,7 @@ function search() {
                
 			   if(row.type=="discussion")
                {
-                    discussion +='<ol>'
+                   // discussion +='<ol>'
 		    discussion +='<ul>';
                     discussion +='<li class="discussion" ><a href="'+url+'" target="_apps">'+subject+'</a></li>';
                     discussion +='</ul>';  
@@ -126,7 +126,7 @@ function search() {
                     discussion +='</ul>';
                     discussion +='</font>';
                     
-                    discussion +='</ol>'
+                    //discussion +='</ol>'
                     
                   //  discussion +='</h5>';
                     discussion +='<hr>';   
