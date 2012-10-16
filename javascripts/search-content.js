@@ -202,11 +202,13 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     document +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     document +='</ul>';
                     document +='</font>';
-                   
+                    
+                    document +='<font size="2" color="grey">';     
                     document +='<ul>';                    
                     document +='<li>'+contentSummary+'</li>';                   
                     document +='</ul>';
-                   
+                    document +='</font>';     
+                     
                     document +='<font size="2" color="grey">';
                     document +='<ul>';                                       
                     document +='<li>Created:'+createdDate+'</li>';
@@ -234,10 +236,12 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      update +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                      update +='</ul>';
                      update +='</font>';
-                   
+                     
+                     update +='<font size="2" color="grey">';     
                      update +='<ul>';                   
                      update +='<li>'+contentSummary+'</li>';
                      update +='</ul>';
+                     update +='</font>';     
                    
                      update +='<font size="2" color="grey">';
                      update +='<ul>';                                       
@@ -267,13 +271,15 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      post +='</ul>';
                      post +='</font>';
                      
+                     post +='<font size="2" color="grey">';     
                      post +='<ul>';                   
                      post +='<li>'+contentSummary+'</li>';                   
                      post +='</ul>';
+                     post +='</font>';     
                    
                      post +='<font size="2" color="grey">';
                      post +='<ul>';                                       
-                    post +='<li>Created:'+createdDate+'</li>';
+                     post +='<li>Created:'+createdDate+'</li>';
                      post +='Last Modified:'+newDate+'';                
                      post +='<li>Replies:'+replyCount+'</li>';                  
                      post +='Likes:'+likeCount+'';              
