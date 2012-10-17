@@ -281,7 +281,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      post +='<font size="2" color="black">';  
                      post +='<ul>';  
                      //post+='<div align="justify">';
-                     post +='<li><p>'+contentSummary+'</p></li>';  
+                     post +='<li><p align="justify">'+contentSummary+'</p></li>';  
                      post +='</div>';
                      //post +='</ul>';
                      post +='</font>';  
