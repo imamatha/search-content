@@ -29,6 +29,49 @@ function init() {
        + '.' + String( (date.getUTCMilliseconds()/1000).toFixed(3) ).slice( 2, 5 )
        + '+0000'; 
 } */
+ function monthConvert(d){
+
+  var outMonth="";
+    switch (d) {
+        case '01':
+    outMonth= "Jan";
+    break;
+  case '02':
+   outMonth= "Feb";
+    break;
+  case '03':
+    outMonth= "Mar";
+    break;
+  case '04':
+    outMonth= "Apr";
+break;
+case '05':
+    outMonth= "May";
+    break;
+  case '06':
+    outMonth= "Jun";
+    break;
+  case '07':
+    outMonth= "Jul";
+    break;
+  case '08':
+    outMonth= "Aug";
+break;
+case '09':
+    outMonth= "Sep";
+    break;
+  case '10':
+    outMonth= "Oct";
+    break;
+  case '11':
+    outMonth= "Nov";
+    break;
+  case '12':
+    outMonth= "Dec";
+break;
+}
+return outMonth;
+}
 
 // Perform a search and display the results
 function search() {
@@ -99,50 +142,7 @@ function search() {
                     myDate=myDate.split("-"); 
                     dateM=myDate[1];
 
-       function monthConvert(d){
-
-  var outMonth="";
-    switch (d) {
-        case '01':
-    outMonth= "Jan";
-    break;
-  case '02':
-   outMonth= "Feb";
-    break;
-  case '03':
-    outMonth= "Mar";
-    break;
-  case '04':
-    outMonth= "Apr";
-break;
-case '05':
-    outMonth= "May";
-    break;
-  case '06':
-    outMonth= "Jun";
-    break;
-  case '07':
-    outMonth= "Jul";
-    break;
-  case '08':
-    outMonth= "Aug";
-break;
-case '09':
-    outMonth= "Sep";
-    break;
-  case '10':
-    outMonth= "Oct";
-    break;
-  case '11':
-    outMonth= "Nov";
-    break;
-  case '12':
-    outMonth= "Dec";
-break;
-}
-return outMonth;
-}
-
+      
 var finalMonth=monthConvert(dateM);
 
 var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
