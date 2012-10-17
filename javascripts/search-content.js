@@ -148,8 +148,8 @@ function search() {
                     
                     discussion +='<font size="2" color="grey">';                                 
                     discussion +='<ul>';                    
-                    discussion +='<li>Created:'+createdDate+'</li>';
-                    discussion +='Last Modified:'+newDate+'';                    
+                   // discussion +='<li>Created:'+createdDate+'</li>';
+                    discussion +='Date:'+newDate+'';                    
                     discussion +='<li>Replies:'+replyCount+'</li>';                  
                     discussion +='Likes:'+likeCount+'';                        
                     discussion +='</ul>';
