@@ -188,7 +188,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                    // discussion +='</table>';
                          
                    discussion +='<hr size="1" color="lightgrey">';
-                   discussion +='<br>';
+                  // discussion +='<br>';
                                      
                }
                
@@ -223,7 +223,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     document +='</font>';
                     document +='</div>';
                     document +='<hr size="1" color="lightgrey">';   
-                    document +='<br>';
+                   // document +='<br>';
                   
                   
                }
@@ -258,7 +258,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      update +='</font>';
                      update +='</div>';   
                      update +='<hr size="1" color="lightgrey">'; 
-                     update +='<br>';
+                     //update +='<br>';
                                     
                 }
                 
@@ -279,7 +279,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      
                      post +='<font size="2" color="black">';     
                      post +='<ul>';                        
-                     post +='<li>'+contentSummary+'</li>';                         
+                     post +='<li><p>'+contentSummary+'</p></li>';                         
                      post +='</ul>';
                      post +='</font>';     
                    
@@ -293,7 +293,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      post +='</font>';
                      post +='</div>';                
                      post +='<hr size="1" color="lightgrey">'; 
-                     post +='<br>';
+                   //  post +='<br>';
                }
                                   
             });
