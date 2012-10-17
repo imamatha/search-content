@@ -150,7 +150,7 @@ function search() {
                     discussion +='<ul>';                    
                    // discussion +='<li>Created:'+createdDate+'</li>';
                     discussion +='<li>Date:'+newDate+'</li>';                    
-                    discussion +='<li>Replies:'+replyCount+'</li>';                  
+                    discussion +='Replies:'+replyCount+'';                  
                     discussion +='Likes:'+likeCount+'';                        
                     discussion +='</ul>';
                     discussion +='</font>';
