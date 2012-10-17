@@ -6,29 +6,6 @@ function init() {
    
 }
 
- /* function getISOStrict(date) {
-   
-   if (Date.prototype.toISOString) {
-        return date.toISOString().replace(/Z$/, "+0000");
-    }
-
-    function pad(number) {
-        var r = String(number);
-        if ( r.length === 1 ) {
-            r = '0' + r;
-        }
-        return r;
-    }
-
-    return date.getUTCDate();
-       + '-' + pad( date.getUTCMonth() + 1 )
-        + '-' + pad( date.getUTCFullYear() );
-        + 'T' + pad( date.getUTCHours() )
-       + ':' + pad( date.getUTCMinutes() )
-       + ':' + pad( date.getUTCSeconds() )
-       + '.' + String( (date.getUTCMilliseconds()/1000).toFixed(3) ).slice( 2, 5 )
-       + '+0000'; 
-} */
  function monthConvert(d){
 
   var outMonth="";
@@ -122,35 +99,30 @@ function search() {
             var type="";
             var username="";
             var myDate="";
-            var str="";
+           // var str="";
 
             
             
-            $.each(rows, function(index, row) {   
-					url=row.resources.html.ref;
-                    subject=row.subject;
-                    contentSummary=row.contentSummary;
-                    author=row.author.name;
-                    createdDate=row.creationDate;                   
-                    likeCount=row.likeCount;
-                    replyCount=row.replyCount;
-                    type=row.type;
-                    avatar=row.author.avatarURL;
-                    username=row.author.username;
-                    str=row.modificationDate.substr(0,10);
-                    myDate=str; 
-                    myDate=myDate.split("-"); 
-                    dateM=myDate[1];
-
-      
-var finalMonth=monthConvert(dateM);
-
-var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
+            $.each(rows, function(index, row) {
+            	url=row.resources.html.ref;
+		subject=row.subject;
+               	contentSummary=row.contentSummary;
+                author=row.author.name;
+                createdDate=row.creationDate;                   
+                likeCount=row.likeCount;
+                replyCount=row.replyCount;
+                type=row.type;
+                avatar=row.author.avatarURL;
+                username=row.author.username;
+                myDate=row.modificationDate.substr(0,10);                  
+                myDate=myDate.split("-"); 
+                dateM=myDate[1];
+		var finalMonth=monthConvert(dateM);
+		var newDate=finalMonth+" "+myDate[2]+","+myDate[0]; 
 
 
-               
-			   if(row.type=="discussion")
-               {
+               if(row.type=="discussion")
+               	{
                	     // discussion +='<table border="1">';             
                     discussion +='<div>';
                     //discussion +='<p line-height:70%>';
