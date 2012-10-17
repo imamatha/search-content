@@ -277,13 +277,15 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      post +='</ul>';
                      post +='</font>';
                      
-                     post+='<div align="justify">';
+                    
                      post +='<font size="2" color="black">';  
-                     post +='<ul>';                        
-                     post +='<li>'+contentSummary+'</li>';                         
+                     post +='<ul>';  
+                     post+='<div align="justify">';
+                     post +='<li>'+contentSummary+'</li>';  
+                     post +='</div>';
                      post +='</ul>';
                      post +='</font>';  
-                     post +='</div>';
+                     
                    
                      post +='<font size="2" color="grey">';
                      post +='<ul>';                                       
