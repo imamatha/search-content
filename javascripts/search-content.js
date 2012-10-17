@@ -170,7 +170,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     
                     discussion +='<font size="2" color="black">';                                    
                     discussion +='<ul>';                   
-                    discussion +='<li>'+contentSummary+'</li>';                   
+                    discussion +='<div class="align">'+contentSummary+'</div>';                  
                     discussion +='</ul>';
                      discussion +='</font>';
                     
@@ -209,7 +209,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     
                     document +='<font size="2" color="black">';     
                     document +='<ul>';                    
-                    document +='<li>'+contentSummary+'</li>';                   
+                    document +='<div class="align">'+contentSummary+'</div>';                   
                     document +='</ul>';
                     document +='</font>';     
                      
@@ -244,7 +244,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      
                      update +='<font size="2" color="black">';     
                      update +='<ul>';                   
-                     update +='<li>'+contentSummary+'</li>';
+                     update +='<div class="align">'+contentSummary+'</div>';  
                      update +='</ul>';
                      update +='</font>';     
                    
