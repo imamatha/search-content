@@ -149,7 +149,7 @@ function search() {
                     discussion +='<font size="2" color="grey">';                                 
                     discussion +='<ul>';                    
                    // discussion +='<li>Created:'+createdDate+'</li>';
-                    discussion +='Date:'+newDate+'';                    
+                    discussion +='<li>Date:'+newDate+'</li>';                    
                     discussion +='<li>Replies:'+replyCount+'</li>';                  
                     discussion +='Likes:'+likeCount+'';                        
                     discussion +='</ul>';
@@ -187,8 +187,8 @@ function search() {
                      
                     document +='<font size="2" color="grey">';
                     document +='<ul>';                                       
-                    document +='<li>Created:'+createdDate+'</li>';
-                    document +='Last Modified:'+newDate+'';                
+                   // document +='<li>Created:'+createdDate+'</li>';
+                    document +='<li>Date:'+newDate+'</li>';                  
                     document +='<li>Replies:'+replyCount+'</li>';                  
                     document +='Likes:'+likeCount+'';              
                     document +='</ul>';                    
@@ -222,8 +222,8 @@ function search() {
                    
                      update +='<font size="2" color="grey">';
                      update +='<ul>';                                       
-                     update +='<li>Created:'+createdDate+'</li>';
-                     update +='Last Modified:'+newDate+'';                
+                     //update +='<li>Created:'+createdDate+'</li>';
+                     update +='<li>Date:'+newDate+'</li>';                 
                      update +='<li>Replies:'+replyCount+'</li>';                  
                      update +='Likes:'+likeCount+'';              
                      update +='</ul>';
@@ -259,8 +259,8 @@ function search() {
                    
                      post +='<font size="2" color="grey">';
                      post +='<ul>';                                       
-                     post +='<li>Created:'+createdDate+'</li>';
-                     post +='Last Modified:'+newDate+'';                
+                     //post +='<li>Created:'+createdDate+'</li>';
+                     post +='<li>Date:'+newDate+'</li>';                  
                      post +='<li>Replies:'+replyCount+'</li>';                  
                      post +='Likes:'+likeCount+'';              
                      post +='</ul>';
