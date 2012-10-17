@@ -144,7 +144,7 @@ function search() {
                     discussion +='<ul>';                   
                     discussion +='<div class="align">'+contentSummary+'</div>';                  
                     discussion +='</ul>';
-                     discussion +='</font>';
+                    discussion +='</font>';
                     
                     discussion +='<font size="2" color="grey">';                                 
                     discussion +='<ul>';                    
@@ -189,8 +189,8 @@ function search() {
                     document +='<ul>';                                       
                    // document +='<li>Created:'+createdDate+'</li>';
                     document +='<li>Date:'+newDate+'</li>';                  
-                    document +='<li>Replies:'+replyCount+'</li>';                  
-                    document +='Likes:'+likeCount+'';              
+                    document +='Replies:'+replyCount+'';                  
+                    document +='<li>Likes:'+likeCount+'</li>';              
                     document +='</ul>';                    
                     document +='</font>';
                     document +='</div>';
@@ -224,8 +224,8 @@ function search() {
                      update +='<ul>';                                       
                      //update +='<li>Created:'+createdDate+'</li>';
                      update +='<li>Date:'+newDate+'</li>';                 
-                     update +='<li>Replies:'+replyCount+'</li>';                  
-                     update +='Likes:'+likeCount+'';              
+                     update +='Replies:'+replyCount+'';                  
+                     update +='<li>Likes:'+likeCount+'</li>';              
                      update +='</ul>';
                      update +='</font>';
                      update +='</div>';   
@@ -261,8 +261,8 @@ function search() {
                      post +='<ul>';                                       
                      //post +='<li>Created:'+createdDate+'</li>';
                      post +='<li>Date:'+newDate+'</li>';                  
-                     post +='<li>Replies:'+replyCount+'</li>';                  
-                     post +='Likes:'+likeCount+'';              
+                     post +='Replies:'+replyCount+'';                  
+                     post +='<li>Likes:'+likeCount+'</li>';              
                      post +='</ul>';
                      post +='</font>';
                      post +='</div>';                
