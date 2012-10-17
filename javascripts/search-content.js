@@ -163,7 +163,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     discussion +='<ul>';                   
                     //discussion +='<li>&nbsp;</li>';
                     //  discussion +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
-                    discussion +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    discussion +='<li>Created by<a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     //console.log("Author: "+author);                   
                     discussion +='</ul>';
                     discussion +='</font>';
@@ -203,7 +203,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                     document +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
                     //document +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/>
-                    document +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                    document +='<li>Created by<a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                     document +='</ul>';
                     document +='</font>';
                     
@@ -238,7 +238,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      update +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
                      //update +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
-                     update +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                     update +='<li>Created by<a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                      update +='</ul>';
                      update +='</font>';
                      
@@ -273,7 +273,7 @@ var newDate=finalMonth+" "+myDate[2]+","+myDate[0];
                      post +='<ul>';
                     //discussion +='<li>&nbsp;</li>';
                     // post +='<li>Created by<img src="'+ avatar + '" width=\'25px\' height=\'25px\' border=\'0\'/><a href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
-                     post +='<li>Created by <a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
+                     post +='<li>Created by<a class="nopad" href=https://apps-onprem.jivesoftware.com/people/'+username+'>'+author+'</a></li>';
                      post +='</ul>';
                      post +='</font>';
                      
